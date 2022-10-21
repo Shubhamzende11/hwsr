@@ -1,0 +1,22 @@
+:host {
+  height: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  .flex-root {
+    height: 100%;
+  }
+}
+
+.page-loaded {
+  app-layout {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+}
+.header.align-items-stretch{
+  height: 117px;
+  background-color:#3065CB;
+
+  // background-color: #07695f;
+}

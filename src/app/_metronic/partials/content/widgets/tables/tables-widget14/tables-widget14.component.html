@@ -1,0 +1,1302 @@
+<!-- begin::Header -->
+
+<div class="card-header border-0 pt-5">
+  <h3 class="card-title align-items-start flex-column">
+
+    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+
+    <!-- <div class="search-hero">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching for a hero by id or name or country">
+    </div> -->
+    <!-- <span class="card-label fw-bolder fs-3 mb-1 ">State</span> -->
+    <!-- <span class="text-muted mt-1 fw-bold fs-7">Over 500 orders</span> -->
+  </h3>
+  <div class="card-toolbar">
+    <!-- begin::Menu -->
+    <!-- <button
+      type="button"
+      class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary"
+      data-kt-menu-trigger="click"
+      data-kt-menu-placement="bottom-end"
+      data-kt-menu-flip="top-end"
+    >
+      <span
+        [inlineSVG]="'./assets/media/icons/duotune/general/gen024.svg'"
+        class="svg-icon svg-icon-2"
+      ></span>
+    </button> -->
+    <!-- begin::Menu 2 -->
+    <app-dropdown-menu2></app-dropdown-menu2>
+    <!-- end::Menu 2 -->
+    <!-- end::Menu -->
+  </div>
+</div>
+<!-- end::Header -->
+<!-- begin::Body -->
+<div class="card-body py-3 body ">
+  <!-- begin::Table container -->
+  <div class="table-responsive ">
+    <!-- begin::Table -->
+    <table id="myTable"
+      class="table table-row-bordered table-row-g-100 align-middle gs-0 gy-3 tableFixHead ;"
+    >
+      <!-- begin::Table head -->
+      <thead class="fs-5px" >
+        <tr class="fw-bolder ">
+          <!-- <th class="w-25px">
+            <div
+              class="
+                form-check form-check-sm form-check-custom form-check-solid
+              "
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                data-kt-check="true"
+                data-kt-check-target=".widget-13-check"
+              />
+            </div>
+          </th> -->
+          <th class="min-w-80px text-center text-white "><span>Station <br> Name</span></th>
+          <!-- <th class="min-w-60px">Wind Dir 1 min</th> -->
+          <!-- <th class="min-w-80px text-center"><span>Station</span></th> -->
+          <th class="min-w-70px text-white  "><span>Wind Dir</span><br>1 min</th>
+          <th class="min-w-70px text-white"text-white><span>Wind Dir</span><br> 3 min</th>
+          <th class="min-w-85px text-white "><span>Wind dir </span><br> max</th>
+          <th class="min-w-80px text-white"><span>Wind Speed</span><br> 1 min</th>
+          <th class="min-w-80px text-white"><span>Wind speed</span><br> 3 min</th>
+          <th class="min-w-80px text-white "><span>Wind Speed</span><br> max</th>
+          <th class="min-w-70px text-white"><span>Pressure</span><br> insta</th>
+          <th class="min-w-70px text-white "><span>Pressure</span><br> 1 min</th>
+          <th class="min-w-70px text-white"><span>Pressure</span><br> 3 min</th>
+          <th class="min-w-70px text-white"><span>Pressure</span><br> 10 min</th>
+
+
+
+
+
+
+        </tr>
+      </thead>
+      <!-- end::Table head -->
+      <!-- begin::Table body -->
+
+      <tbody>
+        <tr>
+          <td>
+            <li class="text-dark fw-bolder d-block mb-1 fs-8px">ADIRAMPATTINAM</li>
+          </td>
+          <td>
+            <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+          </td>
+          <td>
+            <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+          </td>
+          <td>
+            <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+          </td>
+          <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+          <td>
+            <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+          </td>
+          <td >
+            <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+          </td>
+          <td >
+            <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+          </td>
+          <td >
+            <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+          </td>
+          <td >
+            <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+          </td>
+          <td >
+            <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <li class="text-dark fw-bolder d-block mb-1 fs-8px">BALASORE</li>
+          </td>
+          <td>
+            <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+          </td>
+          <td>
+            <li class="teal fw-bolder d-block mb-1 fs-8">214</li>
+          </td>
+          <td>
+            <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+          </td>
+          <li class="yellow fw-bolder d-block mb-1 fs-8">150</li>
+
+          <td>
+            <li class="pink fw-bolder d-block mb-1 fs-8">300</li>
+          </td>
+          <td >
+            <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+          </td>
+          <td >
+            <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+          </td>
+          <td >
+            <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+          </td>
+          <td >
+            <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+          </td>
+          <td >
+            <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <li class="text-dark fw-bolder d-block mb-1 fs-8px">BHUBANESHWAR</li>
+          </td>
+          <td>
+            <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+          </td>
+          <td>
+            <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+          </td>
+          <td>
+            <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+          </td>
+          <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+          <td>
+            <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+          </td>
+          <td >
+            <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+          </td>
+          <td >
+            <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+          </td>
+          <td >
+            <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+          </td>
+          <td >
+            <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+          </td>
+          <td >
+            <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+          </td>
+        </tr>
+        <tr>
+          <tr>
+            <td>
+              <li class="text-dark fw-bolder d-block mb-1 fs-8px">BHUJ
+              </li>
+            </td>
+            <td>
+              <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+            </td>
+            <td>
+              <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+            </td>
+            <td>
+              <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+            </td>
+            <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+            <td>
+              <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+            </td>
+            <td >
+              <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+            </td>
+            <td >
+              <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+            </td>
+            <td >
+              <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+            </td>
+            <td >
+              <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+            </td>
+            <td >
+              <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+            </td>
+          </tr>
+          <tr>
+            <tr>
+              <td>
+                <li class="text-dark fw-bolder d-block mb-1 fs-8px">CHANDBALI
+                </li>
+              </td>
+              <td>
+                <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+              </td>
+              <td>
+                <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+              </td>
+              <td>
+                <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+              </td>
+              <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+              <td>
+                <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+              </td>
+              <td >
+                <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+              </td>
+              <td >
+                <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+              </td>
+              <td >
+                <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+              </td>
+              <td >
+                <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+              </td>
+              <td >
+                <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+              </td>
+            </tr>
+            <tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">CHENNAI
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">CUDDALORE
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">DIGHA
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">DWARKA
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">GOPALPUR
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">HALDIA
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">KAKINADA
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">KALINGAPATNAM
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">KANYAKUMARI
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">KARAIKAL
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">KAVALI
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">MACHILIPATNAM
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">MORMUGOA
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">NAGAPATTINAM
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">NALIYA
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">ONGOLE
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">PAMBAN
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">PANJIM
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">PARADEEP
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">PORT BLAIR
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">PUDUCHERRY
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">PURI
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">RATNAGIRI
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">SALT LAKE
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">SRINAGAR
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">THOOTHUKUDI
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">TONDI
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">VERAVAL
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8px">VISAKHAPATNAM
+                  </li>
+                </td>
+                <td>
+                  <li class="green fw-bolder d-block mb-1 fs-8">693</li>
+                </td>
+                <td>
+                  <li class=" teal fw-bolder d-block mb-1 fs-8">214</li>
+                </td>
+                <td>
+                  <li class="orange fw-bolder d-block mb-1 fs-8">230</li>
+                </td>
+                <li class="yellow  fw-bolder d-block mb-1 fs-8">150</li>
+
+                <td>
+                  <li class="pink  fw-bolder d-block mb-1 fs-8">300</li>
+                </td>
+                <td >
+                  <li class="cyan fw-bolder d-block mb-1 fs-8">500</li>
+                </td>
+                <td >
+                  <li class="text-dark fw-bolder d-block mb-1 fs-8">123</li>
+                </td>
+                <td >
+                  <li class="secondary fw-bolder d-block mb-1 fs-8">125</li>
+                </td>
+                <td >
+                  <li class="dark fw-bolder d-block mb-1 fs-8">130</li>
+                </td>
+                <td >
+                  <li class="gray fw-bolder d-block mb-1 fs-8">155</li>
+                </td>
+              </tr>
+
+      </tbody>
+      <!-- end::Table body -->
+    </table>
+
+    <!-- end::Table -->
+  </div>
+
+  <!-- end::Table container -->
+</div>
+<!-- begin::Body -->

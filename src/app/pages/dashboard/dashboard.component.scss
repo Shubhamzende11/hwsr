@@ -1,0 +1,50 @@
+#country-state{
+    option{
+        background-color: #fff;
+        color: black;
+
+
+    }
+}
+.filter{
+    width: 11rem;
+}
+.mixed-container{
+    width: 100%;
+
+    >*{
+        width: inherit;
+        justify-content:end;
+    }
+}
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+table{
+    margin-bottom: 0;
+    background-color: rgb(127, 136, 255);
+}
+.a{
+    border: 1px solid black;
+
+}
+.ab{
+    width: 50vh;
+    height: 25vh;
+}
+.cd{
+    width: 50vh;
+    height: 40vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 15rem;
+    margin-right: 0.5rem;
+    margin-left: -0.5rem;
+    justify-content: center;
+
+}
+.r{
+  margin-top: 50px;
+}
